@@ -17,6 +17,22 @@
 <p>Added Codes </p>
 
 <p>Added VIP Gamepass </p>
+  
+<button onclick="showContent()">Show Miner Simulator Thumbnail</button>
+
+<template>
+  <h2>Flower</h2>
+  <img src="Miner Simulator.jpg" width="512" height="512">
+</template>
+
+<script>
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(false);
+  document.body.appendChild(clon);
+}
+</script>
+
 
 </body>
 </html>
